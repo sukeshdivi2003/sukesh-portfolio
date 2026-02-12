@@ -1,0 +1,450 @@
+:root {
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* Color System — Midnight Indigo + Emerald */
+    --color-primary: #818cf8;
+    --color-primary-light: #a5b4fc;
+    --color-primary-dark: #6366f1;
+
+    --color-accent: #34d399;
+    --color-accent-light: #6ee7b7;
+    --color-accent-dark: #10b981;
+
+    --color-bg-dark: #0a0f1a;
+    --color-surface-dark: #111827;
+    --color-card-dark: #1e293b;
+
+    --color-text-primary: #e2e8f0;
+    --color-text-secondary: #94a3b8;
+    --color-text-dark: #0a0f1a;
+
+    --color-border: #1e293b;
+    --color-border-light: rgba(148, 163, 184, 0.15);
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 20px rgba(129, 140, 248, 0.15);
+    --shadow-glow-accent: 0 0 20px rgba(52, 211, 153, 0.15);
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    --border-radius: 0.5rem;
+    --transition-speed: 0.3s;
+
+    color-scheme: dark;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+    --color-primary: #6366f1;
+    --color-primary-light: #818cf8;
+    --color-primary-dark: #4f46e5;
+
+    --color-accent: #10b981;
+    --color-accent-light: #34d399;
+    --color-accent-dark: #059669;
+
+    --color-bg-dark: #f8fafc;
+    --color-surface-dark: #f1f5f9;
+    --color-card-dark: #ffffff;
+
+    --color-text-primary: #1e293b;
+    --color-text-secondary: #64748b;
+    --color-text-dark: #ffffff;
+
+    --color-border: #e2e8f0;
+    --color-border-light: rgba(100, 116, 139, 0.12);
+
+    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.12);
+    --shadow-glow-accent: 0 0 20px rgba(16, 185, 129, 0.12);
+
+    color-scheme: light;
+}
+
+/* ===== Animation Keyframes ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes float-slow {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes typewriter-cursor {
+
+    0%,
+    100% {
+        border-color: var(--color-primary);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(129, 140, 248, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(129, 140, 248, 0.2);
+    }
+}
+
+@keyframes borderGlow {
+
+    0%,
+    100% {
+        border-color: var(--color-border-light);
+    }
+
+    50% {
+        border-color: var(--color-primary);
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+}
+
+/* ===== Scroll Reveal System ===== */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-animate="fade-left"] {
+    transform: translateX(-30px);
+}
+
+[data-animate="fade-right"] {
+    transform: translateX(30px);
+}
+
+[data-animate="scale"] {
+    transform: scale(0.92);
+}
+
+[data-animate="fade-down"] {
+    transform: translateY(-25px);
+}
+
+[data-animate].revealed {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* ===== Progress bar fill animation ===== */
+.progress-bar {
+    width: 0 !important;
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.progress-bar.fill {
+    /* Width is set inline, the transition animates it */
+}
+
+/* ===== Delay utilities ===== */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#root {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text-primary);
+    line-height: 1.2;
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: inherit;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--color-primary-light);
+}
+
+section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.app {
+    padding-top: 80px;
+}
+
+/* Utilities */
+.glass {
+    background: rgba(10, 15, 26, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+[data-theme="light"] .glass {
+    background: rgba(248, 250, 252, 0.85);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.glow-text {
+    text-shadow: 0 0 40px rgba(129, 140, 248, 0.3);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, var(--color-text-primary), var(--color-text-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Typography Utilities */
+.section-title {
+    color: var(--color-text-primary);
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

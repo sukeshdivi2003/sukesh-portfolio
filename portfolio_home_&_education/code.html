@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Divi Sukesh Babu - Portfolio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                "primary": "#135bec",
+                "primary-light": "#4285f4",
+                "primary-dark": "#0a3aa6",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+                "surface-dark": "#1a2233",
+                },
+                fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                backgroundImage: {
+                    'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                }
+            },
+            },
+        }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(16, 22, 34, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(19, 91, 236, 0.1);
+        }
+        .glow-text {
+            text-shadow: 0 0 40px rgba(19, 91, 236, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-display min-h-screen selection:bg-primary selection:text-white">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex-shrink-0 cursor-pointer">
+<span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">DSB</span>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-8">
+<a class="text-primary hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#home">Home</a>
+<a class="text-slate-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#education">Education</a>
+<a class="text-slate-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Skills</a>
+<a class="text-slate-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Projects</a>
+<a class="text-slate-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Certifications</a>
+<a class="text-slate-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#">Leadership</a>
+</div>
+</div>
+<div class="md:hidden">
+<button class="text-white hover:text-primary p-2">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden" id="home">
+<!-- Background Elements -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/20 rounded-full blur-[100px] opacity-50"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-primary/10 rounded-full blur-[80px] opacity-30"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+<!-- Text Content -->
+<div class="lg:col-span-7 text-center lg:text-left">
+<div class="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6">
+<span class="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                        Available for Internship Opportunities
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white mb-6 glow-text">
+                        Hello, I'm <br/>
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light">Divi Sukesh Babu</span>
+</h1>
+<p class="mt-4 text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Computer Science Student specializing in CSBS. Passionate about building scalable software and solving complex problems through code.
+                    </p>
+<div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-0.5" href="#contact">
+                            Contact Me
+                        </a>
+<div class="flex items-center justify-center space-x-4 ml-0 sm:ml-4 mt-4 sm:mt-0">
+<a aria-label="Email" class="p-3 rounded-lg bg-surface-dark border border-slate-700 text-slate-400 hover:text-primary hover:border-primary transition-colors group" href="mailto:divisukesh@example.com">
+<span class="material-icons group-hover:scale-110 transition-transform">email</span>
+</a>
+<a aria-label="LinkedIn" class="p-3 rounded-lg bg-surface-dark border border-slate-700 text-slate-400 hover:text-primary hover:border-primary transition-colors group" href="#">
+<!-- LinkedIn Icon SVG -->
+<svg class="w-6 h-6 fill-current group-hover:scale-110 transition-transform" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a aria-label="GitHub" class="p-3 rounded-lg bg-surface-dark border border-slate-700 text-slate-400 hover:text-primary hover:border-primary transition-colors group" href="#">
+<!-- GitHub Icon SVG -->
+<svg class="w-6 h-6 fill-current group-hover:scale-110 transition-transform" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Visual Element -->
+<div class="lg:col-span-5 mt-12 lg:mt-0 relative">
+<div class="relative w-full aspect-square max-w-md mx-auto">
+<!-- Abstract Tech Representation -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary via-blue-900 to-background-dark rounded-3xl opacity-20 transform rotate-6 scale-95 border border-primary/20"></div>
+<div class="absolute inset-0 bg-surface-dark rounded-3xl overflow-hidden shadow-2xl border border-slate-700/50 flex items-center justify-center">
+<div class="relative w-full h-full p-6 flex flex-col justify-between overflow-hidden">
+<!-- Decorative grid -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#135bec 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10 flex justify-between items-start">
+<div class="bg-primary/20 p-2 rounded-lg backdrop-blur-sm">
+<span class="material-icons text-primary text-3xl">terminal</span>
+</div>
+<div class="flex space-x-1">
+<div class="w-2 h-2 rounded-full bg-red-500/80"></div>
+<div class="w-2 h-2 rounded-full bg-yellow-500/80"></div>
+<div class="w-2 h-2 rounded-full bg-green-500/80"></div>
+</div>
+</div>
+<div class="relative z-10 mt-8 space-y-3 font-mono text-sm">
+<div class="flex">
+<span class="text-primary mr-2">const</span>
+<span class="text-blue-300">student</span>
+<span class="text-white mx-2">=</span>
+<span class="text-white">{</span>
+</div>
+<div class="pl-4 flex">
+<span class="text-slate-400">name:</span>
+<span class="text-green-400 ml-2">"Divi Sukesh Babu"</span>,
+                                    </div>
+<div class="pl-4 flex">
+<span class="text-slate-400">role:</span>
+<span class="text-green-400 ml-2">"CSBS Student"</span>,
+                                    </div>
+<div class="pl-4 flex">
+<span class="text-slate-400">location:</span>
+<span class="text-green-400 ml-2">"Vignan University"</span>,
+                                    </div>
+<div class="text-white">};</div>
+<div class="pt-4 flex items-center animate-pulse">
+<span class="text-primary mr-2">➜</span>
+<span class="text-slate-300">Compiling portfolio...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="py-20 relative bg-surface-dark/50" id="education">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-base text-primary font-semibold tracking-wide uppercase">My Journey</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Education</p>
+<div class="mt-4 max-w-2xl text-xl text-slate-400 mx-auto">
+                    Building a strong theoretical and practical foundation in computer science and business systems.
+                </div>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Timeline Line -->
+<div class="absolute left-0 md:left-1/2 h-full w-px bg-slate-700 transform md:-translate-x-1/2 ml-6 md:ml-0"></div>
+<!-- Education Item 1 -->
+<div class="relative z-10 mb-12">
+<div class="flex flex-col md:flex-row items-center justify-between w-full group">
+<!-- Date Badge (Desktop: Left) -->
+<div class="w-full md:w-5/12 mb-4 md:mb-0 md:text-right md:pr-8 pl-16 md:pl-0 order-2 md:order-1">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-dark border border-slate-700 text-slate-300 text-sm font-medium shadow-sm group-hover:border-primary/50 transition-colors">
+                                2022 — 2026
+                             </span>
+</div>
+<!-- Timeline Dot -->
+<div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-background-dark border-4 border-primary z-10 shadow-[0_0_0_4px_rgba(19,91,236,0.2)]"></div>
+<!-- Card (Desktop: Right) -->
+<div class="w-full md:w-5/12 pl-16 md:pl-8 order-3 md:order-2">
+<div class="relative p-6 bg-surface-dark rounded-xl border border-slate-700 hover:border-primary/50 transition-all duration-300 shadow-lg hover:shadow-primary/5">
+<!-- Card Header -->
+<div class="flex items-start justify-between mb-4">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-icons text-primary">school</span>
+</div>
+<div class="flex items-center space-x-1 bg-green-500/10 px-2 py-1 rounded text-green-400 text-xs font-bold border border-green-500/20">
+<span>CGPA: 6.57</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">B.Tech in CSBS</h3>
+<p class="text-primary-light font-medium text-sm mt-1 mb-3">Vignan University</p>
+<p class="text-slate-400 text-sm mb-4">
+                                    Pursuing Computer Science and Business Systems. Focusing on software development life cycles, business analytics, and core CS fundamentals.
+                                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-background-dark rounded text-xs text-slate-400 border border-slate-800">Data Structures</span>
+<span class="px-2 py-1 bg-background-dark rounded text-xs text-slate-400 border border-slate-800">Algorithms</span>
+<span class="px-2 py-1 bg-background-dark rounded text-xs text-slate-400 border border-slate-800">Business Systems</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-slate-800 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<span class="text-xl font-bold text-white">DSB</span>
+<p class="text-slate-500 text-sm mt-1">© 2023 Divi Sukesh Babu. All rights reserved.</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Home</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Projects</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
