@@ -11,10 +11,10 @@ const Footer = () => {
           </div>
 
           <div className="footer-socials">
-            <a href="#" className="social-link" aria-label="GitHub">
+            <a href="https://github.com/sukeshdivi2003" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
               <span className="font-bold text-xs">GH</span>
             </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sukesh-dev/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
               <span className="font-bold text-xs">in</span>
             </a>
             <a href="mailto:sukeshdivi2003@gmail.com" className="social-link" aria-label="Email">

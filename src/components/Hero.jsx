@@ -96,16 +96,16 @@ const Hero = () => {
             <a href="#projects" className="btn-primary">
               <span className="material-icons btn-icon">rocket_launch</span> View Projects
             </a>
-            <a href="#certifications-leadership" className="btn-outline-hero">
+            <a href="https://drive.google.com/file/d/11QqVxrTWlNKjvmzpsM6zag9qvbdDEbwC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline-hero">
               <span className="material-icons btn-icon">description</span> My Resume
             </a>
           </div>
 
           <div className="social-row" data-animate data-delay="600">
-            <a href="#" className="social-pill" aria-label="GitHub">
+            <a href="https://github.com/sukeshdivi2003" target="_blank" rel="noopener noreferrer" className="social-pill" aria-label="GitHub">
               <span className="font-bold text-xs">GH</span>
             </a>
-            <a href="#" className="social-pill" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sukesh-dev/" target="_blank" rel="noopener noreferrer" className="social-pill" aria-label="LinkedIn">
               <span className="font-bold text-xs">in</span>
             </a>
             <a href="mailto:sukeshdivi2003@gmail.com" className="social-pill" aria-label="Email">
